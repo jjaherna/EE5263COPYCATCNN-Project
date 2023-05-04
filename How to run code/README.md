@@ -33,7 +33,7 @@ Dataset utilized: [CIFAR10](https://www.cs.toronto.edu/~kriz/cifar.html)
 CNN model: $HOME/Copycat/Framework/oracle/model.py
 
 ### Training of the target model
-This model will be trained and established as a benchmark. It will be the target model we intend to copy by querying it and assembling a fake dataset
+This model will be trained and established as a benchmark. It will be the target model we intend to copy by querying it and assembling a fake dataset   
 5. Run scripts to train & test your target CNN Model 
 ```sh
 $ # Training:
