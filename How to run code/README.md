@@ -17,6 +17,14 @@ $ python3 -m venv $HOME/Copycat/venv
 $ source $HOME/Copycat/venv/bin/activate
 $ pip3 install matplotlib numpy scikit-learn torch torchvision tqdm
 ```
+4. Verify CUDA toolkit install
+```
+$ python3
+>>> import torch
+>>> print(torch.cuda.is_avaliable()
+>>>exit()
+```
+[If the above returns True, the calculations will run through an enabled Nvidia graphics module, if not calculations will run on the CPU where a core dump can occur if the dependency set up versions are not compatible]
 
 On this example, we are using the [CIFAR10](https://www.cs.toronto.edu/~kriz/cifar.html) as [dataset](./oracle/cifar_data.py) and a simple [model](./oracle/model.py). <br>
 But feel free to change the code and test other dataset and model. <br>
