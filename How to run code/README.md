@@ -2,7 +2,7 @@
 Copycat CNN is a method by which to copy the learned parameters of a Deep Learning model knowing only the number of possible classifications. The method operates on the principle that Deep Learning models are trained on a specific set of data known as their problem domain. Deep learning models are then able to make predictions on data that they have not explicitly seen during training meaning they can draw conclusions on data outside of their problem domain. The method follows that by querying a Deep Learning model where only output labels are given and no access to the model or training data set one can create a fake dataset by feeding input and macthing labels from the target model being stolen. The learned parameters of this model can be stolen by then training another CNN on the fake dataset.
 
 ## Dependency set up   
-__Ubuntu:__ 22.04>=, Python >=3.10   
+__Linux:__ Ubuntu >=22.04, Python >=3.10   
 __Jetson Nano:__ Jetpack version >= 5.1 w/ CUDA toolkit, Python >=3.9   
    
 1. Create main folder to work out of
