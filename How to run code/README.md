@@ -1,9 +1,9 @@
 #### What is COPYCAT CNN?
 
 
-### Dependency set up
-Ubuntu:22.04>=, Python >=3.10
-Jetson Nano: Jetpack version >= 5.1 w/ CUDA toolkit, Python >=3.9
+### Dependency set up   
+Ubuntu:22.04>=, Python >=3.10   
+Jetson Nano: Jetpack version >= 5.1 w/ CUDA toolkit, Python >=3.9   
 
 ```sh
 $ mkdir $HOME/Copycat
