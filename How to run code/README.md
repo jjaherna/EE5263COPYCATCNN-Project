@@ -56,7 +56,6 @@ Download the [ImageNet](http://www.image-net.org/) images and, if you want, [Mic
 
 8. Create a text file that has the file locations of each image for the purpose of querying our target model
 ```sh
-$ cd $HOME/Copycat/
 $ find $HOME/Copycat/dimage -type f | grep -i 'jpg\|jpeg\|png' > images.txt
 ```
 
