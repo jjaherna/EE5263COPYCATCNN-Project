@@ -26,20 +26,23 @@ $ python3
 ```
 [If the above returns True, the calculations will run through an enabled Nvidia graphics module, if not calculations will run on the CPU where a core dump can occur if the dependency set up versions are not compatible]
 
-On this example, we are using the [CIFAR10](https://www.cs.toronto.edu/~kriz/cifar.html) as [dataset](./oracle/cifar_data.py) and a simple [model](./oracle/model.py). <br>
-But feel free to change the code and test other dataset and model. <br>
-The same model structure is being used to [Oracle](./oracle/model.py) and for [Copycat](./copycat/model.py), but it is not necessary. <br>
-But to avoid constraints caused by the model structure (for example, a smaller model may not be able to copy a larger one), you must use the same model structure for both networks.
+# Target model
+The target model is the model that is having its learned parameters stolen. We must first train a model to benchmark efficency of this method after theft occurs.   
+
+Dataset utilized: [CIFAR10](https://www.cs.toronto.edu/~kriz/cifar.html) 
+CNN model: $HOME/Copycat/Framework/oracle/model.py
 
 ### Training of the target model
 This model will be trained and established as a benchmark. It will be the target model we intend to copy by querying it and assembling a fake dataset
 ```sh
 $ # Training:
-$ python oracle/train.py cifar_model.pth
+$ python3 oracle/train.py cifar_model.pth
 $ # Testing:
-$ python oracle/test.py cifar_model.pth
+$ python3 oracle/test.py cifar_model.pth
 ```
-The file `cifar_model.pth` will be created and will be our _target model_.
+`cifar_model.pth`: Target model location
+
+### Fake dataset input creation   
 
 Now, it is time to extract the labels from our _target model_.<br>
 Download the [ImageNet](http://www.image-net.org/) images and, if you want, [Microsoft COCO](https://cocodataset.org) images.<br>
