@@ -63,7 +63,7 @@ $ find $HOME/Copycat/dimage -type f | grep -i 'jpg\|jpeg\|png' > images.txt
 9. Feed input images into the target model to query with our fake input the output being prediction labels from our target network we will use to create our fake dataset
 ```sh
 $ python3 copycat/label_data.py cifar_model.pth images.txt stolen_labels.txt
-$ python copycat/label_data.py cifar_model.pth images.txt stolen_labels.txt 64
+$ python3 copycat/label_data.py cifar_model.pth images.txt stolen_labels.txt 64
 ```
 10. Train and test our Copycat CNN with the fake dataset we just assembled
 ```sh
