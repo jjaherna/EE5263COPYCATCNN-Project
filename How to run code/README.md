@@ -2,7 +2,7 @@
 
 
 ### Dependency set up   
-__Ubuntu:__22.04>=, Python >=3.10   
+__Ubuntu:__ 22.04>=, Python >=3.10   
 __Jetson Nano:__ Jetpack version >= 5.1 w/ CUDA toolkit, Python >=3.9   
    
 1.Create main folder to work out of
