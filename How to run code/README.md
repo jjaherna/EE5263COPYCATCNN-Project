@@ -22,7 +22,7 @@ $ pip3 install matplotlib numpy scikit-learn torch torchvision tqdm
 $ python3
 >>> import torch
 >>> print(torch.cuda.is_avaliable())
->>>exit()
+>>> exit()
 ```
 [If the above returns True, the calculations will run through an enabled Nvidia graphics module, if not calculations will run on the CPU where a core dump can occur if the dependency set up versions are not compatible]
 
