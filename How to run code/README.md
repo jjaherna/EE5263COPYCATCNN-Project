@@ -26,7 +26,7 @@ $ python3
 ```
 [If the above returns True, the calculations will run through an enabled Nvidia graphics module, if not calculations will run on the CPU where a core dump can occur if the dependency set up versions are not compatible]
 
-# Target model
+## Target model
 The target model is the model that is having its learned parameters stolen. We must first train a model to benchmark efficency of this method after theft occurs.   
 
 Dataset utilized: [CIFAR10](https://www.cs.toronto.edu/~kriz/cifar.html)    
