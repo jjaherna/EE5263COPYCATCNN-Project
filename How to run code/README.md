@@ -31,8 +31,8 @@ But feel free to change the code and test other dataset and model. <br>
 The same model structure is being used to [Oracle](./oracle/model.py) and for [Copycat](./copycat/model.py), but it is not necessary. <br>
 But to avoid constraints caused by the model structure (for example, a smaller model may not be able to copy a larger one), you must use the same model structure for both networks.
 
-Well, the code now is simple to use.<br>
-First, we have to train the Oracle (it will be _target model_):
+### Training of the target model
+This model will be trained and established as a benchmark. It will be the target model we intend to copy by querying it and assembling a fake dataset
 ```sh
 $ # Training:
 $ python oracle/train.py cifar_model.pth
