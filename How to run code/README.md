@@ -64,6 +64,10 @@ $ find $HOME/Copycat/dimage -type f | grep -i 'jpg\|jpeg\|png' > images.txt
 $ python3 copycat/label_data.py cifar_model.pth images.txt stolen_labels.txt
 $ python3 copycat/label_data.py cifar_model.pth images.txt stolen_labels.txt 64
 ```
+   
+## Copycat model
+The copycat model is the model that is stealing learned parameters from our target network by giving it the downloaded input images matched with prediction labels from our target network to create a fake dataset to train on. 
+   
 10. Train and test our Copycat CNN with the fake dataset we just assembled
 ```sh
 $ # Training:
