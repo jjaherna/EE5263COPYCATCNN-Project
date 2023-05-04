@@ -29,7 +29,7 @@ $ python3
 # Target model
 The target model is the model that is having its learned parameters stolen. We must first train a model to benchmark efficency of this method after theft occurs.   
 
-Dataset utilized: [CIFAR10](https://www.cs.toronto.edu/~kriz/cifar.html) 
+Dataset utilized: [CIFAR10](https://www.cs.toronto.edu/~kriz/cifar.html)    
 CNN model: $HOME/Copycat/Framework/oracle/model.py
 
 ### Training of the target model
