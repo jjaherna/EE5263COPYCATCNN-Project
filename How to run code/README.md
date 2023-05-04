@@ -1,15 +1,17 @@
-#### What is COPYCAT CNN?
+## What is COPYCAT CNN?
 
 
 ### Dependency set up   
-Ubuntu:22.04>=, Python >=3.10   
-Jetson Nano: Jetpack version >= 5.1 w/ CUDA toolkit, Python >=3.9   
-
+__Ubuntu:__22.04>=, Python >=3.10   
+__Jetson Nano:__ Jetpack version >= 5.1 w/ CUDA toolkit, Python >=3.9   
+   
+1.Create main folder to work out of
 ```sh
 $ mkdir $HOME/Copycat
 ```
-Download the Framework folder in this Github and extract to the previously made directory $HOME/Copycat
-
+2.Download the Framework folder in this Github and extract to the previously made directory $HOME/Copycat
+   
+3.Set up virtual enviornment and install needed packages
 ```sh
 $ python3 -m venv $HOME/Copycat/venv 
 $ source $HOME/Copycat/venv/bin/activate
